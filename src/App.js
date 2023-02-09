@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Dictionary/>
+      <Dictionary defaultKeyword="peace"/>
       <span>
       <p>
       <a href="https://github.com/Heangt/dictionary-react" target="_blank" rel="noreferrer">Open-source code</a>
