@@ -1,15 +1,17 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Result from "./Result";
+
 export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
   const [result, setResult] = useState([]);
   const [loaded, setLoaded] = useState(false);
-  console.log(result);
+
   function showResult(respones) {
     setLoaded(true);
     setResult(respones.data);
   }
+
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrl).then(showResult);
