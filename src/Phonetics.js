@@ -1,12 +1,12 @@
 import React from "react";
+import ReactAudioPlayer from "react-audio-player";
+//...
 export default function Phonetics(props) {
   let audio = props.phonetics.audio;
   if (audio) {
     return (
       <div>
-        <a href={audio} target="_blank" rel="noreferrer">
-          Lisen
-        </a>
+        <ReactAudioPlayer src={audio} autoPlay controls />
         {""} <small>{props.phonetics.text}</small>
       </div>
     );
