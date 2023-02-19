@@ -14,7 +14,8 @@ export default function Result(props) {
         {phonetics.map(function (phonetic, index) {
           return <Phonetics key={index} phonetics={phonetic} />;
         })}
-        <Photos keyword={keyword} />;
+        <Photos keyword={keyword} />
+        <br />
       </section>
       {meanings.map(function (meaning, index) {
         return <Meanings key={index} meanings={meaning} />;
