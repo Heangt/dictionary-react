@@ -15,8 +15,10 @@ export default function Photos({ keyword }) {
   axios.get(apiUrl, { header: { header } }).then(showPhotos);
 
   return (
-    <a href={originalPhoto} target="_blank" rel="noreferrer">
-      <img src={photo} alt="" />;
-    </a>
+    <div className="Photos pt-2">
+      <a href={originalPhoto} target="_blank" rel="noreferrer">
+        <img src={photo} alt="" />
+      </a>
+    </div>
   );
 }

@@ -8,14 +8,14 @@ export default function Result(props) {
   let keyword = props.result.word;
 
   return (
-    <div class="text-left">
-      <h1>{keyword}</h1>
-      <span>
+    <div className="Result">
+      <section className="px-4">
+        <h1>{keyword}</h1>
         {phonetics.map(function (phonetic, index) {
           return <Phonetics key={index} phonetics={phonetic} />;
         })}
-      </span>
-      <Photos keyword={keyword} />;
+        <Photos keyword={keyword} />;
+      </section>
       {meanings.map(function (meaning, index) {
         return <Meanings key={index} meanings={meaning} />;
       })}

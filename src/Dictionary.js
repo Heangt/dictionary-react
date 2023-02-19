@@ -26,7 +26,7 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="Dictionary">
-        <p class="h4">What word do you want to look up?</p>
+        <p class="h4 my-4">What word do you want to look up?</p>
         <form onSubmit={receiveKeyword}>
           <input
             type="search"
