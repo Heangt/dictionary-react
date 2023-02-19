@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Dictionary defaultKeyword="people" />
+      <Dictionary defaultKeyword="celebrate" />
       <span>
         <p>
           <a
