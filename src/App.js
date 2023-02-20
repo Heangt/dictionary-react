@@ -4,18 +4,16 @@ function App() {
   return (
     <div className="App">
       <Dictionary defaultKeyword="celebrate" />
-      <span>
-        <p>
-          <a
-            href="https://github.com/Heangt/dictionary-react"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open-source code
-          </a>
-          {""} by Heang Araya
-        </p>
-      </span>
+      <small>
+        <a
+          href="https://github.com/Heangt/dictionary-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code
+        </a>
+        {""} by Heang Araya
+      </small>
     </div>
   );
 }
