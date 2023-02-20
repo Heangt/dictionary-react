@@ -10,7 +10,7 @@ export default function Result(props) {
   return (
     <div className="Result">
       <section className="px-4">
-        <h1>{keyword}</h1>
+        <h1 className="text-capitalize">{keyword}</h1>
         {phonetics.map(function (phonetic, index) {
           return <Phonetics key={index} phonetics={phonetic} />;
         })}
